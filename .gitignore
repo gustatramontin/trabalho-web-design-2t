@@ -1,2 +1,5 @@
 # Directory with my other projects
 side
+
+# File of configs of my database
+model/config.ini
