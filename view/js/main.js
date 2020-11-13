@@ -1,3 +1,5 @@
+"use strict"
+
 class StaticSlider {
     constructor() {
         this.blocks = document.querySelectorAll('.slide__new')
