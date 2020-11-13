@@ -1,0 +1,84 @@
+
+div.classes {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+div.classes__class {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+h2, h3, h4 {
+    margin: 3vh;
+    font-size: 1.5rem;
+}
+
+div.class__people {
+    display: flex;
+    flex-flow: row wrap;
+    width: 95vw;
+
+    justify-content: space-around;
+
+}
+
+div.class__people--person {
+    display: flex;
+    flex: row wrap;
+    background-color: white;
+    color: black;
+    width: 550px;
+    height: 30vh;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    align-items: center;
+    margin: 2vh 0;
+}
+
+div.class__people--person img{
+    width: 10vw;
+    height: 25vh;
+    border-radius: 15px;
+    margin: 5%;
+}
+
+div.class__people--person p {
+    line-height: 2rem;
+    word-wrap: break-word;
+    display:inline-block;
+    width: 17vw;
+}
+
+@media all and (max-width: 768px) {
+    div.class__people {
+        display: flex;
+        flex-flow: column wrap;
+        width: 95vw;
+
+        align-items: center;
+    
+        justify-content: center;
+    
+    }
+    
+    div.class__people--person {
+        display: flex;
+        flex-flow: column wrap;
+        width: 80vw;
+        height: auto;
+    }
+
+    div.class__people--person img{
+        width: 30vw;
+        height: 40vh;
+    
+    }
+
+    div.class__people--person p {
+        width: 75vw;
+        text-align: center;
+    }
+}
