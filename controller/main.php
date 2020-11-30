@@ -41,6 +41,12 @@ class Controller {
 
             $this->view->show_teaching_plan_page($activities, $domain);
         }
+
+        elseif ($page == "comentarios") {
+            $opinions = $this->model->get_opinions();
+            $domain = $this->get_config("domain");
+            $this->view->show_opinions_page($opinions, $domain);
+        }
     }
 
     function show_class_page($domain) {

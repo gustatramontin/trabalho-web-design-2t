@@ -142,6 +142,26 @@ class Model {
         return $activities;
     }
 
+    function get_opinions() {
+        $sql = "select student_name, class, opinion from opinions";
+
+        $rows = $this->select($sql); 
+
+        $opinions = [];
+
+        foreach($rows as $row) {
+            $opinions[] = [
+                "student_name" => $row["student_name"],
+                "class" => $row["class"],
+                "opinion" => $row["opinion"],
+            ];
+        }
+
+        $this->close();
+
+        return $opinions;
+    }
+
     function close() {
         $this->conn == null;
     }
