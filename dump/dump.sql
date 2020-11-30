@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `lp_page` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `lp_page`;
 -- MySQL dump 10.13  Distrib 8.0.22, for Linux (x86_64)
 --
 -- Host: 127.0.0.1    Database: lp_page
@@ -77,13 +79,13 @@ DROP TABLE IF EXISTS `opinions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `opinions` (
-  `id` int NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
   `student_name` varchar(70) NOT NULL,
   `class` varchar(10) NOT NULL,
   `opinion` varchar(200) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -92,6 +94,7 @@ CREATE TABLE `opinions` (
 
 LOCK TABLES `opinions` WRITE;
 /*!40000 ALTER TABLE `opinions` DISABLE KEYS */;
+INSERT INTO `opinions` VALUES (1,'Anônimo','102 Info','As aulas são ótimas mas a gente chega a ver muito pouco de programação nesse ano.'),(2,'Anônimo','102 Info','Gosto muito das aulas e do professor.'),(3,'Anônimo','102 Info','Tenho dificuldade de enteder a matéria.'),(4,'Anônimo','102 Info','Não gosto, é muito difícil.');
 /*!40000 ALTER TABLE `opinions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -132,4 +135,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-11-13  8:58:51
+-- Dump completed on 2020-11-30 16:16:14
