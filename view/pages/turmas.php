@@ -13,9 +13,8 @@
     ?>
 
     <div class="classes">
-        <h2>Turmas</h2>
+        <h2>Turma 102 Info</h2>
         <div class="classes__class">
-            <h3>102 Info</h3>
             <h4>Professores</h4>
 
             <div class="class__people">
