@@ -124,5 +124,13 @@ footer {
     header.root__header img {
         display: none;
     }
+
+    footer {
+        flex-flow: column wrap;
+    }
+
+    footer img{
+        width: 95%;
+    }
     
 }
