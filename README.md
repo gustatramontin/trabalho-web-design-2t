@@ -2,13 +2,19 @@
 
 Esse é o repositório de um trabalho da matéria de web design do meu curso.
 
-## Como Usar
+## Como Usar Fácil
+
+Acesse a host: gtramontin.hyperphp.com/
+
+## Como Usar Díficil
 
 Para usar você deve transferir os arquivos para o diretório de seu webser e iniciar o dumb sql
 
 E criar na pasta model um arquivo chamado config.ini e escrever nele a seguinte estrutura.
 
 Eu separei os db em duas partes o da host e o local, isso é porque eu estou usando uma host gratuída que não deixa eu nomear o db do jeito que eu quero.
+
+Obs: O nome do db será 'lp_page'.
 
 ```
 [Host Database]
