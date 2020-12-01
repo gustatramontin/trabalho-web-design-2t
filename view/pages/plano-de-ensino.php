@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <?php require "view/templates/head.php"?>
     <link rel="stylesheet" href="view/css/pano-de-ensino.css">
@@ -13,7 +13,7 @@
         ?>
         
         <section class="root__section">
-            <h2>Atividades</h2>
+            <h2>Atividades</h2> 
             <div class="buttons">
                 <div class="buttons__button buttons__button--left" onclick="soft_slider.moveTo('left', 'P')">➜</div>
                 <div class="buttons__button buttons__button--right" onclick="soft_slider.moveTo('right', 'P')">➜</div>
