@@ -1,8 +1,3 @@
-<?php
-$config = parse_ini_file('model/config.ini')
-
-?>
-
 <nav class="root__nav">
     <ul>
         <li><a href="?page=turmas">Turma</a></li>
