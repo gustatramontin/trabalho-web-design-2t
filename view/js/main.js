@@ -31,9 +31,9 @@ class SoftSlider {
     constructor() {
         this.activities_slider = document.querySelector('.actv-slider')
         this.lives_slider = document.querySelector('.actv-slider--lives')
-        this.jump_to_closest_to_end_actv()
-        this.jump_to_closest_to_start_live()   
-    }
+        /*this.jump_to_closest_to_end_actv()
+        this.jump_to_closest_to_start_live()  */
+    }/*
 
     jump_to_closest_to_end_actv() {
         const ativities = document.querySelectorAll('.actv-slider--pratice .actv-slider__actv')
@@ -52,8 +52,8 @@ class SoftSlider {
         }
 
         slider.scrollLeft = closest[1].offsetLeft + space_to_jumping_one
-    }
-
+    }*/
+    /*
     jump_to_closest_to_start_live() {
         const ativities = document.querySelectorAll('.actv-slider--lives .actv-slider__actv')
 
@@ -64,7 +64,7 @@ class SoftSlider {
         const slider = document.querySelector('.actv-slider--lives')
 
         slider.scrollLeft = closest[1].offsetLeft
-    }
+    }*/
 
     closest_date(dates) {
         let closest = Infinity
@@ -119,7 +119,7 @@ class SoftSlider {
 }
 
 const page = window.location.search.substr(1)
-
+console.log(page)
 var soft_slider
 var static_slider
 if (page=='page=plano-de-ensino') {
