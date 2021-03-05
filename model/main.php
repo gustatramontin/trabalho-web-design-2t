@@ -12,7 +12,7 @@ class Model {
     function __construct() {
         $this->ini = parse_ini_file('config.ini');
         
-        if ($_SERVER['SERVER_NAME'] == 'gtramontin.hyperphp.com') {
+        if ($_SERVER['SERVER_NAME'] == 'gustavotramontin.xyz') {
             $this->servername = $this->ini['name'];
             $this->username = $this->ini['user'];
             $this->password = $this->ini['password'];
