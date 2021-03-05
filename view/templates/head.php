@@ -3,3 +3,4 @@
 <link rel="stylesheet" href="view/css/global.css">
 <link rel="stylesheet" href="view/css/indexpage.css">
 <link rel="icon" href="view/img/programing_logo.jpg">
+<base href="http://localhost/portfolio/projetos/trabalho-web-design-2t/">
